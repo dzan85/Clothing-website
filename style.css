@@ -1,11 +1,9 @@
-/* Apply a box-sizing border-box model for easier layout control */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Set a base font size and style for better readability */
 body {
   font-family: "Arial", sans-serif;
   font-size: 1rem;
@@ -22,9 +20,9 @@ h1 {
 
 p {
   color: #000000;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif, "Arial Narrow Bold", sans-serif;
+  font-family: "Trebuchet MS", Arial, sans-serif;
 }
+
 
 ul {
   display: flex;
@@ -59,19 +57,20 @@ li {
 
 .search-icon {
   position: absolute;
-  left: 15px;
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
   width: 1.25rem;
 }
 
+
 .icon {
   width: 2rem;
 }
 
 .call-to-action {
-  background: url("clothes.png");
+  background: url("images/clothes.png");
   display: flex;
   justify-content: center;
   height: 31.5rem;
@@ -79,12 +78,12 @@ li {
 
 .call-to-action .container {
   text-align: center;
-  max-width: 600px; /* Set a max-width or adjust as needed */
-  padding: 20px; /* Add padding as needed */
+  max-width: 600px;
+  padding: 20px;
 }
 
 .first-line {
-  margin-bottom: 10px; /* Adjust the space between the two lines */
+  margin-bottom: 10px;
 }
 
 .buy-now-btn {
@@ -96,12 +95,12 @@ li {
   cursor: pointer;
   font-weight: bold;
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-  background-color 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .buy-now-btn:hover {
-  background-color: #9f6e9f; /* You can choose a different color for the hover effect */
-  transform: scale(1.1); /* Scale up the button on hover */
+  background-color: #9f6e9f;
+  transform: scale(1.1);
 }
 
 .items {
@@ -116,8 +115,8 @@ li {
 }
 
 .items .box h2 {
-  text-align: center; /* Optional: Center text horizontally */
-  line-height: 50px; /* Optional: Center text vertically */
+  text-align: center;
+  line-height: 50px;
 }
 
 .statement {
@@ -140,14 +139,42 @@ li {
 }
 
 .signup {
-  text-align: center; /* Optional: Center text horizontally */
+  text-align: center;
 }
 
 .divider {
-  border-left: 2px solid #bab9ba; /* Adjust the width and color of the line */
-  height: 14.5rem; /* Adjust the height of the line to fill the viewport */
+  border-left: 2px solid #bab9ba;
+  height: 14.5rem;
 }
 
 .email-section .signup .buy-now-btn {
   background-color: #412a40;
 }
+
+/* Scroll to top arrow */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #8c3c8d; 
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.scroll-to-top.show {
+  opacity: 0.7; 
+  pointer-events: auto;
+}
+
+.scroll-to-top:hover {
+  background-color: rgba(133, 119, 133, 0.7); 
+  transform: scale(1.1);
+}
+
