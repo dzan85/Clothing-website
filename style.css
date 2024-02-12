@@ -1,0 +1,153 @@
+/* Apply a box-sizing border-box model for easier layout control */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set a base font size and style for better readability */
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  padding: 1.5rem;
+}
+
+h1 {
+  color: #000000;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2.15rem;
+}
+
+p {
+  color: #000000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif, "Arial Narrow Bold", sans-serif;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 0px;
+}
+
+li {
+  color: black;
+  font-size: 1.25rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#searchInput {
+  width: 25rem;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0be;
+  padding-left: 40px;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 1.25rem;
+}
+
+.icon {
+  width: 2rem;
+}
+
+.call-to-action {
+  background: url("clothes.png");
+  display: flex;
+  justify-content: center;
+  height: 31.5rem;
+}
+
+.call-to-action .container {
+  text-align: center;
+  max-width: 600px; /* Set a max-width or adjust as needed */
+  padding: 20px; /* Add padding as needed */
+}
+
+.first-line {
+  margin-bottom: 10px; /* Adjust the space between the two lines */
+}
+
+.buy-now-btn {
+  background-color: #550a52;
+  color: #fff;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+  background-color 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.buy-now-btn:hover {
+  background-color: #9f6e9f; /* You can choose a different color for the hover effect */
+  transform: scale(1.1); /* Scale up the button on hover */
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.items img {
+  width: 240px;
+  border-radius: 20px;
+}
+
+.items .box h2 {
+  text-align: center; /* Optional: Center text horizontally */
+  line-height: 50px; /* Optional: Center text vertically */
+}
+
+.statement {
+  background-color: rgb(243, 222, 241);
+}
+
+.statement-border {
+  padding: 20px;
+  border: 2px solid #8c3c8d;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.email-section {
+  display: flex;
+  padding: 100px 0px;
+}
+
+.signup {
+  text-align: center; /* Optional: Center text horizontally */
+}
+
+.divider {
+  border-left: 2px solid #bab9ba; /* Adjust the width and color of the line */
+  height: 14.5rem; /* Adjust the height of the line to fill the viewport */
+}
+
+.email-section .signup .buy-now-btn {
+  background-color: #412a40;
+}
