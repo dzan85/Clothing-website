@@ -14,15 +14,23 @@ body {
 
 h1 {
   color: #000000;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 2.15rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 2.24rem;
+}
+
+h3 {
+  color: black;
+}
+
+h4 {
+  color: #000000;
 }
 
 p {
   color: #000000;
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
-
 
 ul {
   display: flex;
@@ -34,6 +42,8 @@ ul {
 li {
   color: black;
   font-size: 1.25rem;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 .navbar {
@@ -42,9 +52,14 @@ li {
   justify-content: space-between;
 }
 
+.logo {
+  width: 12.5rem;
+}
+
 #searchInput {
-  width: 25rem;
+  width: 27rem;
   padding: 10px;
+  margin-right: 5rem;
   border-radius: 15px;
   border: 1px solid #ccc;
   background-color: #f0f0f0be;
@@ -64,7 +79,6 @@ li {
   width: 1.25rem;
 }
 
-
 .icon {
   width: 2rem;
 }
@@ -80,6 +94,10 @@ li {
   text-align: center;
   max-width: 600px;
   padding: 20px;
+}
+
+.call-to-action .container p {
+  padding-bottom: 2rem;
 }
 
 .first-line {
@@ -156,7 +174,7 @@ li {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #8c3c8d; 
+  background-color: #8c3c8d;
   color: #fff;
   padding: 12px 16px;
   border-radius: 50%;
@@ -169,12 +187,71 @@ li {
 }
 
 .scroll-to-top.show {
-  opacity: 0.7; 
+  opacity: 0.7;
   pointer-events: auto;
 }
 
 .scroll-to-top:hover {
-  background-color: rgba(133, 119, 133, 0.7); 
+  background-color: rgba(133, 119, 133, 0.7);
   transform: scale(1.1);
 }
 
+.pre-footer {
+  margin-left: -2rem; /* Adjust this value to match the body padding */
+  margin-right: -2rem; /* Adjust this value to match the body padding */
+  padding: 30px; /* or any other value you desire */
+  background-color: #9f6e9f; /* Just for visualization */
+  display: flex;
+  justify-content: space-around;
+}
+
+.sec1 {
+  display: flex;
+}
+
+.block {
+  padding: 2rem;
+}
+
+.block ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.block li {
+  font-size: 1rem;
+}
+
+.sec2 {
+  padding: 2rem;
+}
+
+.sec2-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sec2 .sec2-email .buy-now-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-divider {
+  width: 100%;
+  border: 1px solid #000000; /* Customize the border color as needed */
+  margin: 20px 0; /* Adjust the margin to control the space around the line */
+}
+
+.connect-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pre-footer-icons {
+  padding: 2rem;
+}
