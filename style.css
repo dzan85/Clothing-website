@@ -12,6 +12,8 @@ body {
   padding: 1.5rem;
 }
 
+
+
 h1 {
   color: #000000;
   font-family: "Montserrat", sans-serif;
@@ -231,6 +233,7 @@ li {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .sec2 .sec2-email .buy-now-btn {
@@ -253,5 +256,30 @@ li {
 }
 
 .pre-footer-icons {
+  padding: 0rem 2rem;
+}
+
+footer {
+  background-color: #000000;
+  margin: -2rem;
   padding: 2rem;
+  color: white;
+}
+
+footer li {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.notice li {
+  border-right: 1px solid #ffffff; /* Adjust the color and thickness of the vertical line */
+  padding-right: 2rem; /* Adjust as needed */
+  margin: 0rem 0.7rem;
+}
+
+footer p {
+  color: white;
+  padding: 2rem;
+  font-size: 0.8rem;
+  text-align: center;
 }
