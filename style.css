@@ -12,8 +12,6 @@ body {
   padding: 1.5rem;
 }
 
-
-
 h1 {
   color: #000000;
   font-family: "Montserrat", sans-serif;
@@ -285,4 +283,123 @@ footer p {
 }
 
 /*Mobile Responsive Design Soon*/
+@media (max-width: 767px) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
+  .divider{
+    display: none;
+  }
+
+  #scrollToTop{
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-container {
+    margin-top: 10px;
+    margin-left: 90px;
+  }
+
+  #searchInput {
+    width: 220px;
+  }
+
+  .navbar .icon {
+    display: none;
+    padding: 20px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .under-navbar {
+    padding: 10px;
+  }
+
+  .sec1 {
+    width: 70%;
+  }
+
+  .block {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .call-to-action h1 {
+    font-size: 1.5em;
+  }
+
+  .items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .items img {
+    width: 130px;
+  }
+
+  .box {
+  }
+
+  .box:last-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .statement-border {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  .email-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signup {
+    margin-bottom: 20px;
+  }
+
+  .pre-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sec2 {
+    width: 100%;
+  }
+
+  .sec2-email,
+  .connect-section {
+    text-align: center;
+  }
+
+  .pre-footer-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .notice {
+    display: none;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
