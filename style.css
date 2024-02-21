@@ -52,6 +52,33 @@ li {
   justify-content: space-between;
 }
 
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px; /* Adjust the spacing between menu items as needed */
+  cursor: pointer;
+}
+
+.nav-list li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Set the thickness of the underline */
+  background-color: #333; /* Set the underline color */
+  transition: width 0.3s ease; /* Add a smooth width transition */
+}
+
+.nav-list li:hover::before {
+  width: 100%;
+}
+
 .logo {
   width: 12.5rem;
 }
@@ -327,7 +354,9 @@ footer p {
   }
 
   .sec1 {
-    width: 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .block {
