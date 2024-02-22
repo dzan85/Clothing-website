@@ -317,11 +317,11 @@ footer p {
     box-sizing: border-box;
   }
 
-  .divider{
+  .divider {
     display: none;
   }
 
-  #scrollToTop{
+  #scrollToTop {
     display: none;
   }
 
@@ -345,9 +345,9 @@ footer p {
     padding: 20px;
   }
 
-  .nav-list {
-    display: none;
-  }
+  /* Navigation List Styles */
+  
+  
 
   .under-navbar {
     padding: 10px;
@@ -430,5 +430,35 @@ footer p {
 
   p {
     font-size: 0.9em;
+  }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 600px) and (max-width: 1025px) {
+  body {
+    font-size: 16px; /* Adjust font size for tablets */
+  }
+  .items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #scrollToTop {
+    display: none;
+  }
+
+  .box:last-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box:nth-last-child(2) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .signup {
+    padding: 10px;
   }
 }
